@@ -1,0 +1,3 @@
+package: sk.golang.RpcAndHttp
+import:
+  - package: google.golang.org/grpc
