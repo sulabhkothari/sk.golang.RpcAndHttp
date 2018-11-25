@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message Req{
+    int32 id = 1;
+}
+
+message Chat{
+    int32 id = 1;
+    string message = 2;
+}
+
+service StreamingSvc {
+    rpc Get (stream Chat) returns (stream Chat);
+}

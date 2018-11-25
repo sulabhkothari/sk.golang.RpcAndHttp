@@ -11,10 +11,9 @@ import (
 type basicServer struct{}
 
 func (server *basicServer) Search(ctxt context.Context, request *svcdef.SearchRequest) (*svcdef.SearchResponse, error) {
-	println("NewRequest________________"+request.Query)
 	res := svcdef.SearchResponse{}
 	res.Query = "HW"
-	return &res,nil
+	return &res, nil
 }
 
 func main() {
